@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-巴贝奇差分机
-差分法用来计算一元二次多项式，符合计算机的计算方式
+�ͱ����ֻ�
+��ַ���������һԪ���ζ���ʽ�����ϼ�����ļ��㷽ʽ
 num		square	alpha		beta
 0			0
 1			1				1
@@ -11,7 +11,7 @@ num		square	alpha		beta
 */
 
 /*
-下面的方法用数组存储差分计算得到的所有值
+����ķ���������洢��ּ���õ�������ֵ
 int main( )
 {
 	int k,n,square[10],alpha[10],beta[10];
@@ -30,7 +30,7 @@ int main( )
 */
 
 /*
-其实不用把所有的数都存到数组中 避免占用内存
+��ʵ���ð����е������浽������ ����ռ���ڴ�
 */
 int main( )
 {
