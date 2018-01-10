@@ -113,7 +113,8 @@ void main(){
 }
 ```
 
-## 7. 公式
+## 7. 公式(GitHub不支持Markdown的公式)
+[公式请看这里](https://www.zybuluo.com/xiaonan8826/note/1014213)
 公式在编辑文档的时候必不可少，其实有很简单的记忆规则
 **要记住的**
 
@@ -219,7 +220,6 @@ ___
 
 [toc]
 
-$a^2$
 
 
 [alias1]:https://baidu.com
