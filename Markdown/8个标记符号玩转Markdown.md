@@ -219,7 +219,7 @@ ___
 
 [toc]
 
-
+$a^2$
 
 
 [alias1]:https://baidu.com
