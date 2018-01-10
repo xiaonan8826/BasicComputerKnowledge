@@ -116,6 +116,7 @@ void main(){
 ## 7. 公式(GitHub不支持Markdown的公式[公式请看这里](https://www.zybuluo.com/xiaonan8826/note/1014213))
 
 公式在编辑文档的时候必不可少，其实有很简单的记忆规则
+
 **要记住的**
 
 - 公式用`$`套起来，比如这样`$\sqrt{a}$`，如果想单独一行就用`$$`
@@ -164,8 +165,11 @@ $$f(x)=\frac{1}{\sqrt{2\pi}\delta}\exp\left(-\frac{(x-\mu^2)}{2\delta^2}\right)$
 靠下`\ldots`$a,b,\ldots$
 居中`\cdots`$a,b,\cdots$
 **公式符号有点多但并不复杂，记住几个常用的，就能扫倒一大片了**
+
 ## 8. 表格
+
 表格在文档编辑中必不可少，Markdown的表格编辑非常简单
+
 **要记住的**
 
 - 表格可以用`|`来形象化的分割表示
