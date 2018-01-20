@@ -14,7 +14,7 @@ SAAS:software as a service
 - 软件工程
 - 信息系统
 - 信息技术
-![专业](../images/专业.png)
+![专业](images/专业.png)
 
 
 
