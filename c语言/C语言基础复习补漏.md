@@ -115,6 +115,31 @@ void fun(int arr[]){
 	printf("arr[0]:%d",*arr); //输出 arr[0]:1000
 }
 ```
+- 加上`const`之后的区别
+const int* p
+int const* p
+int *const p
+他们三个有什么区别？
+const在*前面表示不能通过 *p = i 这样赋值 但是i的值本身是可变的
+const在*后面表示p不能变，也就是p中保存的地址不能变 如：p = &i不对
+- 在数组上加`const`
+const int a[]
+因为a本身可以看做不可改变地址的指针，在加上const表示数组中的每个值都是不可改变的
+注意和const指针不一样，const指针指向的值可以改变
+- *p++
+通常*P++ 都有对应的机器指令 可以执行的更快
+- NULL
+操作系统会为每个进程分配连续的虚拟内存，其中有0地址的内存通常不能动，
+我们利用这个为指针赋初值0 或 NULL，通常为NULL
+- 动态内存分配 `malloc`
+```c
+//使用malloc 必须引入
+#include <stdlib.h>
+int* a;
+//malloc返回的是void* 必须转换
+a = (int*)malloc(n*sizeof(int));
+```
+
       
 
 
