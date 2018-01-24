@@ -116,12 +116,12 @@ void fun(int arr[]){
 }
 ```
 - 加上`const`之后的区别
-const int* p
-int const* p
-int *const p
+const int\* p
+int const\* p
+int \*const p
 他们三个有什么区别？
-const在*前面表示不能通过 *p = i 这样赋值 但是i的值本身是可变的
-const在*后面表示p不能变，也就是p中保存的地址不能变 如：p = &i不对
+const在\*前面表示不能通过 \*p = i 这样赋值 但是i的值本身是可变的
+const在\*后面表示p不能变，也就是p中保存的地址不能变 如：p = &i不对
 - 在数组上加`const`
 const int a[]
 因为a本身可以看做不可改变地址的指针，在加上const表示数组中的每个值都是不可改变的
@@ -138,10 +138,56 @@ const int a[]
 int* a;
 //malloc返回的是void* 必须转换
 a = (int*)malloc(n*sizeof(int));
+//用完之后必须释放
+free(a);
 ```
+- getchar()和putchar()
+每次只读取和写入一个字节
+在shell环境中，可以连续输入一串字符串，按回车键会写入shell的缓冲区中，然后才由c程序读取
+`ctrl+d`或`ctrl+z`:这个指令是shell接收，会把程序执行完
+`ctrl+c`:强行中断
+- 字符串数组
+`char** a`表示a是一个指向指针的指针
+`char a[][]` a[0]-->char[10]
+`char* a[]` a[0]-->char*
+```c
+    main(int argc,char const *argv[]){
+    }
+```
+- 字符串操作函数
+\#include <string.h>
+strlen(char const* s)
+strcmp(const char* s1,const char* s2)
+char* strcpy(char* restrict dst,char const*restrict src)
+char* strchr(const char* s,int c)
+char* strrchr(const char* s,int c)
+char* strstr(const char* s1,const char* s2)
+char* strcasestr(const char* s1,const char* s2)
+- 枚举
+```c
+    //colors是枚举的类型
+    //常量符号只能是int类型，依次从0到n
+    enum colors {red,green,yellow,numcolors};
+    //枚举类型常量也可以指定值
+    enum colors {red=2,green,yellow=5};
+```
+- 结构类型
+```c
+struct date {
+            int day;
+            int month;
+            int year;
+            };
+struct date date1 = {1,2,3};
+struct date date2 = {.day=1,.year=3};//没有赋值的默认0
+```
+结构类型和数组不一样 数组名字是指针，结构类型不是，
+结构类型可以用另一个结构类型赋值，数组不行，并且赋值以后两个是独立的个体
+结构类型作为参数的时候是复制过去的，和数组不一样
+`p->month`:p是结构体指针
+`scanf("%d",&p->x)`先计算p->x 再取地址&
 
-      
-
+- 结构数组
 
 
 
