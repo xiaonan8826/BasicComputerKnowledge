@@ -188,8 +188,11 @@ struct date date2 = {.day=1,.year=3};//没有赋值的默认0
 `scanf("%d",&p->x)`先计算p->x 再取地址&
 
 - 结构数组
-
-
-
-
+`struct date dates[] = {{},{}}`
+- 类型定义
+`typedef int alias`
+- 联合
+`union{}`里面的成员占据同样的空间
+小端法：低位在前
+- ACLLIB图形库
 
